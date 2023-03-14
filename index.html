@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 674px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-image: url('http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT2fOqem4ruHAuY3m_EZDY5tkG3j2lAadjPhT4O80P7SPj_XLRpjWFFcXt43BlruXVNyECd55RY1bDOIX0');
+
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Chi Chi</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <a href="https://www.petfinder.com/search/cats-for-adoption/us/nj/newark/" target="_blank">Traits</a>
+      <a href="https://stacker.com/new-jersey/north-jersey/cats-available-adoption-newark" target="_blank">Food</a> 
+   <a href="https://www.brickcitykittiesrescue.org/" target="_blank">Enjoyment</a> 
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Chi Chi</h1>
+    <p>Chi Ch is a lovable cat that has been trained and also can be trained to be yours. She loves to eat but is very shy. She likes being around humans but kind of struggles with other cats. She is able to live with them over time, but she isn't of the quicker type. Another thing is that she eats only a certain type of food, she likes more simplier treatments of mixture which allows for the cost for the food to be less than other cats that like mixtured food.</p>
+    
+    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT2fOqem4ruHAuY3m_EZDY5tkG3j2lAadjPhT4O80P7SPj_XLRpjWFFcXt43BlruXVNyECd55RY1bDOIX0" width ="300">
+  </article>
+</section>
+
+<footer>
+  <p>Reasources have been provided by our Sponser: Cats</p>
+</footer>
+
+</body>
+</html>
+
